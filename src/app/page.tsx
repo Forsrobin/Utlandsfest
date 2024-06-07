@@ -1,8 +1,15 @@
+import { Footer } from '@/components/Footer'
+import { EventDisplay } from '@/components/event-display'
+import Hero from '@/components/hero'
+import { Navbar } from '@/components/navbar'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen  flex-col items-center justify-between p-24'>
-      <p>Hello</p>
+    <main className='h-screen min-h-screen flex flex-col'>
+      <Navbar />
+      <Hero />
+      <EventDisplay />
+      <Footer />
     </main>
   )
 }
