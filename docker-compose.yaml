@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  utlansfest-web:
+    container_name: utlansfest-web
+    image: 'registry-fors.aviliax.com/utlansfest-web'
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8017:3000
