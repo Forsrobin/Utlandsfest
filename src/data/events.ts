@@ -14,10 +14,20 @@ export type IEvent = {
 }
 export const events: IEvent[] = [
   {
+    name: 'BootCaps',
+    date: new Date('2024-06'),
+    who: 'Capslägercommittén',
+    logo: '/logos/BootCaps.jpg',
+    notes: '',
+    location: 'Rävlanda',
+    url: 'https://www.facebook.com/events/403791965464164',
+    coordinates: { lat: 57.6544, lng: 12.5383 },
+  },
+  {
     name: 'Badekarpadlingen',
     date: new Date('2024-09'),
     who: 'Badekarpadlingen (vadkom)',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/300868965_569676988184365_7564684406756073049_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=1btx3NeMwMoQ7kNvgHT08PQ&_nc_ht=scontent.fbma6-1.fna&oh=00_AYCPuDCvg_PW5m9Zmrn7inF4iQ767LIX4Yp_cNfRKDdlqA&oe=665C2ACE',
+    logo: '/logos/Badekarpadlingen.jpg',
     url: 'http://www.badekarpadlingen.no/',
     notes: 'Norige',
     description:
@@ -32,7 +42,7 @@ export const events: IEvent[] = [
     notes: '',
     description:
       'Sexmästeriet i Borås presenterar stolt Rabalder 2024! I år firar Rabalder även 30 år och självklart ska detta firas, det vill ni inte missa!! En helg med sjuka fester, lekar, attacksupa, sittning och en gyllene rabarber och mycket mer!',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/441073469_890291679776730_9072883408748747585_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dC5kUjvCvj4Q7kNvgFS3QPo&_nc_ht=scontent.fbma6-1.fna&oh=00_AYDlEhl2r14UQbHpWkVZ_lVKVf76uPmD1eLG18vKs3JyRA&oe=665C0E63',
+    logo: '/logos/Rabalder.jpg',
     url: 'https://www.facebook.com/events/415545171280658/?ref=newsfeed',
     location: 'Borås',
     coordinates: { lat: 57.721, lng: 12.9401 },
@@ -42,8 +52,9 @@ export const events: IEvent[] = [
     date: new Date('2024-10'),
     who: 'Skövde sexmästeri (Skö Sex)',
     notes: '',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/326473970_589630633007424_8026394881578793281_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ktltDxibaSsQ7kNvgG8uMyM&_nc_ht=scontent.fbma6-1.fna&oh=00_AYBhBn7uaCBslGwSzY5HH3LONPk70DoTwA2n9HnSV_NmCw&oe=665C3C8B',
-
+    logo: '/logos/Bonnaphesten.jpg',
+    url: 'https://www.facebook.com/events/990774669070451',
+    description: 'Are you ready for the biggest utlandsphest at Schlätta? 🎉 Of course, you are! 😃',
     location: 'Skövde',
     coordinates: { lat: 58.3898, lng: 13.853 },
   },
@@ -55,7 +66,7 @@ export const events: IEvent[] = [
     description:
       'Sjöslaget är en av Sveriges största årligen återkommande fester för högskole- och universitetsstudenter. Någon gång när temperaturen börjar sjunka och regnet öser ned i mitten på oktober är det dags att bege sig till Värtahamnen i Stockholm och borda Baltic Queen där 36 timmar späckade med artister, DJ:s och andra aktiviteter drar igång.',
     url: 'https://www.facebook.com/sjoslaget/events',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/302280232_513182110807645_3932822717580076126_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=J3LUZe2-OQIQ7kNvgEiTKIp&_nc_ht=scontent.fbma6-1.fna&oh=00_AYDA6EGr9US6pmwuGuXEXWKlY0aFnpV9xfHQXZBf229D1w&oe=665C173E',
+    logo: '/logos/Sjöslaget.png',
     location: 'Stockholm -Tallin',
     coordinates: { lat: 59.3293, lng: 18.0686 }, // Stockholm coordinates
   },
@@ -63,7 +74,7 @@ export const events: IEvent[] = [
     name: 'Fejden',
     date: new Date('2024-11'),
     who: 'D6',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/277586359_339518771489667_2146669863171200519_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vue75yrsM6UQ7kNvgGzGd9k&_nc_ht=scontent.fbma6-1.fna&oh=00_AYCUuhTsK0gnYHNKCUhXAB82MAufS7xsw_t6Pt1jDCXt_w&oe=665C2F33',
+    logo: '/logos/Fejden.jpg',
     notes: '',
     url: 'https://www.ludd.ltu.se/~d6/',
     description: 'På ställen, där man sover blott en gång, blir pannan klottrad och drömmen full av dông. Sup upp, Sup upp! Den nya fejden gryr.',
@@ -79,7 +90,7 @@ export const events: IEvent[] = [
     url: 'https://www.facebook.com/events/1675922702945316',
     description:
       'En studentphest i Karlskrona som anordnas av Sexistenz i samarbete med deras Sappar.\nEventet inträffar en helg under höstterminen.\nKårkvällar och en utomordentlig sittning brukar adderas på övriga deltävlingar.',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/424723204_858540082980919_7844771466672656615_n.jpg?stp=dst-jpg_p180x540&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=vCjUgs_C12oQ7kNvgFQXkaY&_nc_ht=scontent.fbma6-1.fna&oh=00_AYBRqGaz8S-HTEy-O1MJq73FkB8kgMbgdy17KWvNwyaI5Q&oe=665C1F9F',
+    logo: '/logos/Fiaslaget.jpg',
     coordinates: { lat: 56.1820711, lng: 15.5918314 },
   },
   {
@@ -87,7 +98,7 @@ export const events: IEvent[] = [
     date: new Date('2025-02'),
     who: 'Sexmästeriet mdu Eskilstuna',
     notes: '',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/426001225_784513150368922_3676856689435206380_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-cGXQN77RlMQ7kNvgHVzbIP&_nc_ht=scontent.fbma6-1.fna&oh=00_AYCzFGSDgLwYVNPBXAVAIYQcv8mKppJUkBk1zjnRiqq05w&oe=665C4133',
+    logo: '/logos/Eskilstuna winter games.png',
     url: 'https://www.facebook.com/events/234449576386517',
     description:
       'Vintern är här och vi i Eskilstuna bjuder in till 2024 års upplaga av Eskilstuna Winter Games!❄️😍 Detta år kör vi tema DISNEY så dra på dig en utklädnad och var redo för årets tävling!',
@@ -99,6 +110,9 @@ export const events: IEvent[] = [
     date: new Date('2025-02'),
     who: 'D6',
     notes: 'Sveriges Nordliggaste Pulka Partaj',
+    logo: '/logos/S.No.P.P.jpg',
+    description: 'Vårens roligaste event är tillbaka, på agendan är de pulkaåkning på hemmabyggda pulkor som gäller. Samt en sittning på kvällen för de som vill ha lite extra kul. Eftersom detta är en tävling så kommer det laget som bygger "bäst" pulka vinna. Vilket ni kanske vill lägga lite extra krut på då detta är D6 bidrag till kårkampen!',
+    url: 'https://www.facebook.com/events/1212273829707446/',
     location: 'Luleå',
     coordinates: { lat: 65.5848, lng: 22.1547 },
   },
@@ -107,6 +121,7 @@ export const events: IEvent[] = [
     date: new Date('2025-02'),
     who: 'Festvärket',
     notes: '',
+    logo: '/logos/Sjärtslaget.jpg',
     location: 'Trollhättan',
     coordinates: { lat: 58.2837, lng: 12.2886 },
   },
@@ -116,7 +131,7 @@ export const events: IEvent[] = [
     url: 'https://www.facebook.com/events/323150290396425',
     who: 'Thorax',
     description: 'Thorax presenterar Hjärtslaget 2024!❤️👊 Följ oss på Instagram @thoraxhalmstadstudentkar för mer framtida information⚠️',
-    // logo: 'https://cdn.discordapp.com/attachments/802918668123242543/1245142033199398922/382807590_630467365905818_2719219500998163357_n.jpg?ex=6657ac62&is=66565ae2&hm=aa14c7561f1cde16bf912360db189e98223e46577013446d4667d7f2222ce866&',
+    logo: '/logos/Hjärtslaget.jpg',
     notes: '',
     location: 'Halmstad',
     coordinates: { lat: 56.6745, lng: 12.857 },
@@ -126,7 +141,7 @@ export const events: IEvent[] = [
     date: new Date('2025-03'),
     who: 'Sjöslags gruppen (Klubbmästarrådet (KMR))',
     notes: '',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/385508581_813004064158780_3045339780399502202_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=IPknrZ7v0HMQ7kNvgFwyoj7&_nc_ht=scontent.fbma6-1.fna&oh=00_AYDtXEdg0Tm7ADIsUuUfQ-CcOtqEI-V9dUd2NVrI2hfADg&oe=665C3225',
+    logo: '/logos/Vårkryssen.png',
     description: 'Det är sen gammalt att man kör en Silliz innan man går på ett fartyg! 🚢',
     location: 'Stockholm/ Finland',
     coordinates: { lat: 59.3293, lng: 18.0686 }, // Stockholm coordinates
@@ -139,8 +154,8 @@ export const events: IEvent[] = [
     description:
       'OS, eller de Otympliga Spelen som det egentligen heter, är en tävling i dagarna tre som annordnas av Piraya. Vem som får äran och lyckan att ta hem det stora priset avgörs på lördagen med traditionella OS-grenar. ',
     url: 'https://www.accum.se/~piraya/',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/241960101_6365533010138563_7071238375259238882_n.png?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XUQgfI-67U0Q7kNvgF4fN87&_nc_ht=scontent.fbma6-1.fna&oh=00_AYBlvwEhLMlO0lyQ_rY2_xzdsa_R6UtMaEtSuMtBi_0nXA&oe=665C3583',
     location: 'Umeå',
+    logo: '/logos/Otympliga Spelen.png',
     coordinates: { lat: 65.5848, lng: 22.1547 }, // Luleå coordinates
   },
   {
@@ -148,6 +163,7 @@ export const events: IEvent[] = [
     date: new Date('2025-03'),
     who: 'Qult',
     notes: '',
+    logo: '/logos/Syndafloden.jpg',
     location: 'Jönköping',
     coordinates: { lat: 57.7826, lng: 14.1618 },
   },
@@ -156,7 +172,7 @@ export const events: IEvent[] = [
     date: new Date('2025-04'),
     who: 'ålrundan',
     notes: 'Finland',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/405777888_334591609177965_6710600913373264786_n.jpg?stp=dst-jpg_p180x540&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=houBRlcKQmEQ7kNvgFMz7uu&_nc_ht=scontent.fbma6-1.fna&oh=00_AYCF7lZHd0dECY63WI8QUsHmYr8ptbWunMGC31LOvCBm7g&oe=665C2C4C',
+    logo: '/logos/Ålrundan.jpg',
     url: 'https://www.facebook.com/events/266503099215389/?ref=newsfeed',
     location: 'Åland',
     coordinates: { lat: 60.1785, lng: 19.9156 },
@@ -175,6 +191,8 @@ export const events: IEvent[] = [
     who: 'D-group / LTH',
     notes: '',
     location: 'Linköping',
+    url: 'https://domd.nu/',
+    logo: '/logos/D-group.png',
     coordinates: { lat: 58.4108, lng: 15.6214 },
   },
   {
@@ -183,6 +201,10 @@ export const events: IEvent[] = [
     who: 'DVKV',
     notes: 'inte utlandsphest',
     location: 'Kronåsens',
+    logo: '/logos/Capseisa.jpg',
+    description:
+      'Den 28e april anordnar DVKV det anrika och festliga evenemanget Capseisa. Evenemanget är Sveriges mästerskap i par-caps, och har anordnats sedan 1999, vilket innebär att vi i år firar 25-årsjubileum. Missa inte chansen att framstå som segrare denna historiska dag, utan ryck en kompis i ärmen och boka in Capseisa på skvalborg i er kalender. ',
+    url: 'https://www.facebook.com/events/1161995388496929',
     coordinates: { lat: 59.8439427, lng: 17.6214824 }, // Assuming Kronåsens is a place near Stockholm
   },
   {
@@ -191,7 +213,7 @@ export const events: IEvent[] = [
     who: 'Brutal academin',
     notes: '',
     url: 'https://www.brutal-akademien.org/',
-    // logo: 'https://scontent.fbma6-1.fna.fbcdn.net/v/t39.30808-6/309402095_461008686068367_2387081450756832565_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Tum2MtoUMTkQ7kNvgGSz2WV&_nc_ht=scontent.fbma6-1.fna&oh=00_AYDSI4Kyw-QziwbsH2dw4xzPohiWTww03nvZG7Y6ARfMiA&oe=665C3176',
+    logo: '/logos/Flummen.png',
     description:
       ' Sexmästeriet i Karlskrona och BA™ svettas som feta oäkta finnar i en sauna nu när planeringen inför Flumride™ har tagit sin början. Flummen hålls i Sveriges blötaste studentstad, Karlskrona! Vi drar igång stenhårt den 3:e maj och kör in i kaklet den 5:e maj. Som vanligt så skiter vi i politiken.',
     location: 'Karlskrona',
@@ -203,13 +225,21 @@ export const events: IEvent[] = [
     who: 'SQUVALP',
     notes: '',
     location: 'Stockholm',
+    logo: '/logos/Quarnevalen.jpg',
+    url: 'https://www.quarnevalen.se/',
+    description:
+      ' Bygg mycket, festa mycket, drick mycket, jippa mycket, men främst - ha Qul! Efter 6 års dvala ska hundratals studenter äntligen tillbaka till Byggplatsen och Öltältet på KTH Campus för att bygga sina fantastiska ekipage och visa upp dessa för hela Stockholm i ett Quarnevalståg!',
     coordinates: { lat: 59.3293, lng: 18.0686 },
   },
   {
-    name: 'AG',
+    name: 'Absolut Gotland ',
     date: new Date('2025-05'),
     who: 'Absolut Gotland',
     notes: '',
+    logo: '/logos/AG.png',
+    description:
+      'Absolut Gotland är en legendarisk fest för högskole- och universitetsstudenter som funnits i över 20 år. Strax innan säsongens ordinarie öppnande bokar vi upp en hel stugby och camping i bästa möjliga läge på Gotlands kust och ställer till med fest i dagarna fyra! Njut av vårsolen från terrassen med något drickbart i handen, dansa natten lång på nattklubben, tävla mot andra studenter i traditionella Gotländska lekar, utforska Visby... AG erbjuder något för alla.',
+    url: 'https://absolutgotland.se/',
     location: 'Gotland',
     coordinates: { lat: 57.5345, lng: 18.2926 },
   },
@@ -226,18 +256,12 @@ export const events: IEvent[] = [
     coordinates: { lat: 57.7089, lng: 11.9746 }, // Göteborg coordinates
   },
   {
-    name: 'BootCaps',
-    date: new Date('2024-06'),
-    who: 'Capslägercommittén',
-    notes: '',
-    location: 'Rävlanda',
-    coordinates: { lat: 57.6544, lng: 12.5383 },
-  },
-  {
     name: 'Du vet vad',
     date: new Date('2025-07'),
     who: 'qult',
+    logo: '/logos/Du vet vad.jpg',
     notes: '',
+    url: 'https://qult.nu/index.php?title=Huvudsida',
     location: 'Jönköping',
     coordinates: { lat: 57.7826, lng: 14.1618 },
   },

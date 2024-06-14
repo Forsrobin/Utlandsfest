@@ -34,7 +34,8 @@ const Events: FC<EventsProps> = ({ data }) => {
               <CardDescription>{event.date.toDateString() + ' at ' + event.location}</CardDescription>
             </div>
           </CardHeader>
-          <CardContent>
+          <CardContent className='gap-4 flex flex-col'>
+            {event.url && <a className='text-blue-500 underline' href={event.url} target='_blank' rel='noreferrer'>{event.url}</a>}
             <ScrollArea className='h-[200px] pr-4'>
               <Balancer>{event.description}</Balancer>
             </ScrollArea>
