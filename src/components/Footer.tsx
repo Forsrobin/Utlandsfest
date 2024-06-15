@@ -7,7 +7,7 @@ import { H1 } from './typography/h1'
 
 export const Footer = () => {
   return (
-    <Section className='bg-secondary'>
+    <Section id='footer' className='bg-secondary'>
       <Container>
         <H1 className='mb-4'>Utlandsfest</H1>
         <footer className='flex flex-col lg:flex-row lg:p-4 gap-4 !p-0 '>

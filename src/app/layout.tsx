@@ -3,10 +3,14 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: `https://www.utlandsfest.nu`,
+  },
   title: 'Utlandsfest',
   description:
     'Utlandsfest.nu är din ultimata guide för att hitta nästa stora utlandsfest. Upptäck event, datum och platser för de bästa festerna utomlands',

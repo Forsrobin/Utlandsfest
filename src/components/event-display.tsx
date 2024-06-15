@@ -10,7 +10,7 @@ import { H2 } from './typography/h2'
 import { Input } from './ui/input'
 import { Label } from './ui/label'
 import { ScrollArea } from './ui/scroll-area'
-import { SearchIcon } from 'lucide-react'
+import { Link, SearchIcon } from 'lucide-react'
 
 const getFormatedMonth = (month: Date) => {
   return new Intl.DateTimeFormat('sv-SE', { month: 'long' }).format(month) + ' ' + month.getFullYear()
@@ -35,7 +35,15 @@ const Events: FC<EventsProps> = ({ data }) => {
             </div>
           </CardHeader>
           <CardContent className='gap-4 flex flex-col'>
-            {event.url && <a className='text-blue-500 underline' href={event.url} target='_blank' rel='noreferrer'>{event.url}</a>}
+            <div>
+              {event.url && (
+                <a className={`text-blue-500 underline break-words flex gap-2 items-center`} href={event.url} target='_blank' rel='noreferrer'>
+                  
+                  <Link size={16} className='inline-block' />
+                  <span>Event link</span>
+                </a>
+              )}
+            </div>
             <ScrollArea className='h-[200px] pr-4'>
               <Balancer>{event.description}</Balancer>
             </ScrollArea>
