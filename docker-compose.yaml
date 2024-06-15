@@ -1,9 +1,9 @@
-version: "3.7"
+version: "3.8"
 
 services:
   utlansfest-web:
     container_name: utlansfest-web
-    image: 'registry-fors.aviliax.com/forsrobin/utlandsfest/portfolio::main'
+    image: 'registry-fors.aviliax.com/forsrobin/utlandsfest/portfolio:main'
     build:
       context: ./
       dockerfile: Dockerfile
