@@ -1,0 +1,28 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Out Repository
+    - uses: actions/checkout@v4
+
+    - name: Log in to GitHub Container Registry
+      run: echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login https://registry-fors.aviliax.com -u adminuser --password-stdin
+
+    - name: Build Docker image
+      run: |
+        REPO_LOWER=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
+        BRANCH_NAME=$(echo ${{ github.ref_name }} | tr '[:upper:]' '[:lower:]')
+        docker build . -t registry-fors.aviliax.com/$REPO_LOWER/portfolio:$BRANCH_NAME
+
+    - name: Push Docker image to private registry
+      run: |
+        REPO_LOWER=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
+        BRANCH_NAME=$(echo ${{ github.ref_name }} | tr '[:upper:]' '[:lower:]') # Get the branch name in lowercase
+        docker push registry-fors.aviliax.com/$REPO_LOWER/portfolio:$BRANCH_NAME
