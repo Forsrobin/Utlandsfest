@@ -118,7 +118,8 @@ export const events: IEvent[] = [
   },
   {
     name: 'Sjärtslaget',
-    date: new Date('2025-02'),
+    date: new Date('2025-02-07'),
+    url: 'https://www.facebook.com/events/2073193173099291',
     who: 'Festvärket',
     notes: '',
     logo: '/logos/Sjärtslaget.jpg',
@@ -127,10 +128,10 @@ export const events: IEvent[] = [
   },
   {
     name: 'Hjärtslaget',
-    date: new Date('2025-02'),
-    url: 'https://www.facebook.com/events/323150290396425',
+    date: new Date('2025-02-14'),
+    url: 'https://www.facebook.com/events/913200617541818',
     who: 'Thorax',
-    description: 'Thorax presenterar Hjärtslaget 2024!❤️👊 Följ oss på Instagram @thoraxhalmstadstudentkar för mer framtida information⚠️',
+    description: 'Thorax presenterar Hjärtslaget 2025!❤️👊. Följ oss gärna på Instagram @thoraxhalmstadstudentkarVid frågor, kontakta oss på Instagram DM 🧡. May the punsch be with you!Thorax 🧡',
     logo: '/logos/Hjärtslaget.jpg',
     notes: '',
     location: 'Halmstad',
@@ -233,7 +234,7 @@ export const events: IEvent[] = [
   },
   {
     name: 'Absolut Gotland ',
-    date: new Date('2025-05'),
+    date: new Date('2025-05-15'),
     who: 'Absolut Gotland',
     notes: '',
     logo: '/logos/AG.png',
